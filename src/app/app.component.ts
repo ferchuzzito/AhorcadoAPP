@@ -6,7 +6,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  // palabra = ['AGUACATE', 'MANZANA'];
   palabra = 'AGUACATE';
   palabraOculta = '';
 
@@ -26,7 +25,7 @@ export class AppComponent {
 
   }
 
-  comprobar( letra ) {
+  comprobar( letra: string ) {
 
     this.existeLetra(letra);
 
@@ -64,7 +63,7 @@ export class AppComponent {
   }
 
 
-  existeLetra( letra ) {
+  existeLetra( letra: string ) {
 
     if ( this.palabra.indexOf( letra ) >= 0  ) {
       // console.log('Letra existe ' + letra );
@@ -74,5 +73,4 @@ export class AppComponent {
     }
 
   }
-
 }
