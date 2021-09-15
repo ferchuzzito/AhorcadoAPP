@@ -6,7 +6,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  palabra = 'AGUACATE';
+  Lista = ['MANZANA', 'PERA', 'AGUACATE', 'DURAZNO', 'PIÑA', 'MELON', 'SANDIA', 'HUEVO', 'ZANAHORIA', 'UVA', 'TOMATE'];
+  randomNumber = Math.floor(Math.random() * this.Lista.length);
+  palabra = this.Lista[this.randomNumber];
   palabraOculta = '';
 
   intentos = 0;
